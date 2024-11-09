@@ -1,24 +1,25 @@
 ########################## hero area ##########################
 hero:
-  title: "I'm Burton Guster"
+  title: "Chris Iredale"
 
   # animated text loop
   occupations:
-    - 'Web Developer'
-    - 'Pharmaceutical Salesman'
-    - 'Private Detective'
+    - 'Game Designer'
+    - 'Screenwriter'
+  
 
   # hero background image
   bg_image: '/images/background.jpg'
   # optional mobile breakpoint background
   mobile_bg_image: 'images/gus_small.jpg'
+  video: 'https://youtu.be/CWYB8TFIP2I'
 
 ########################### About ##################################
 about:
   enable: true
-  image: 'images/profile.jpg'
-  title: 'THIS IS ME'
-  content: Hi, thank you for taking a look around my site. If you have any questions feel free to reach out on [LinkedIn, Github, or by email](#contact)!
+  image: 'images/headshot.jpg'
+  title: Games that make you go "Whoa!"
+  content: I am a game designer and screenwriter, currently pursuing my Master's degree in Game Design at the University of Southern California. I have a passion for storytelling and creating immersive experiences that engage and entertain audiences. I am always looking for new opportunities to collaborate with other creatives and bring unique ideas to life.
   button:
     enable: true
     label: 'DOWNLOAD MY RESUME'
@@ -30,54 +31,51 @@ experience:
   enable: true
   title: 'EXPERIENCE'
   experience_list:
-    - name: Web Developer
-      company: Freelance
-      duration: '2020-Current'
-      content: I make websites.
+    - name: RPG Designer
+      company: Magonomia
+      duration: 'March 2022-Current'
+      content: Designed a game using FATE that cut onboarding time for new players by 1600%. Pitched, wrote and delivered a 3000 word adventure for a book with a successful kickstarter campaign.
 
-    - name: Private Detective
-      company: Psych
-      duration: '2019-2020'
-      content: Okay. This is hard to explain but I’m going to give it a shot. You and I are opening our own private detective agency.
+    - name: Writer / Writer's Assistant
+      company: Netflix
+      duration: 'December 2017 - June 2019'
+      content:  Pitched story concepts and jokes for a sitcom using Final Draft, 3 stories were used in the show and over 100 jokes filmed, 1 joke was quoted in the New York Times. Wrote and filmed an episode and was inducted into the Writer’s Guild.
 
-    - name: Pharmaceutical Salesman
-      company: South Coast Pharmaceuticals
-      duration: '2012-2018'
-      content: We are not bounty hunters, Shawn. I am a pharmaceutical salesman. And Lassiter made it very clear! He said in no uncertain terms. These are certain terms, Shawn! Certain terms!
+ 
 
 ############################### Skill #################################
 skill:
   enable: true
-  title: 'SOME SKILLS'
+  title: 'SKILLS'
   showpercent: false
   skill_list:
-    - name: 'React'
-      percentage: '85%'
+    - name: 'Unreal Engine'
+      percentage: '100%'
 
-    - name: 'Detecting'
-      percentage: '93%'
+    - name: 'Unity'
+      percentage: '100%'
 
-    - name: 'Selling'
-      percentage: '25%'
+    - name: 'C# / C++'
+      percentage: '100%'
 
-    - name: 'Yelling'
+    - name: 'Making Cool Stuff'
       percentage: '100%'
 
 ######################### funfacts #############################3
 funfacts:
   enable: true
   funfacts_list:
-    - name: 'CUPS PER DAY'
-      image: 'images/icons/coffee.png'
+    - name: 'GAMES BUILT'
+      image: 'images/icons/web-development.png'
+      count: '15'
+
+    - name: 'SCREENPLAY AWARDS'
+      image: 'images/icons/award.png'
       count: '2'
 
-    - name: 'SITES BUILT'
-      image: 'images/icons/web-development.png'
-      count: '25'
-
-    - name: 'USELESS ROW OF ICONS'
-      image: 'images/icons/happy.png'
-      count: '1'
+    - name: 'CURRENT PROJECTS'
+      image: 'images/icons/works.png'
+      count: '3'
 
 ############################# portfolio ################################
 portfolio:
