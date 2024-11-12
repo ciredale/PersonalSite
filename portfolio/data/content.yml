@@ -6,25 +6,25 @@ hero:
   occupations:
     - 'Game Designer'
     - 'Screenwriter'
+    - 'RPG Designer'
   
 
   # hero background image
-  bg_image: '/images/background.jpg'
+  bg_image: '/images/PacmanComputer.png'
   # optional mobile breakpoint background
-  mobile_bg_image: 'images/gus_small.jpg'
+  mobile_bg_image: 'images/PacmanComputer.png'
   video: 'https://youtu.be/CWYB8TFIP2I'
 
 ########################### About ##################################
 about:
   enable: true
   image: 'images/headshot.jpg'
-  title: Games that make you go "Whoa!"
+  title: Games that make you go "Whoa! Wait... what?"
   content: I am a game designer and screenwriter, currently pursuing my Master's degree in Game Design at the University of Southern California. I have a passion for storytelling and creating immersive experiences that engage and entertain audiences. I am always looking for new opportunities to collaborate with other creatives and bring unique ideas to life.
-  button:
-    enable: true
-    label: 'DOWNLOAD MY RESUME'
-    link: #
-    icon: 'fa-download'
+  ## button:
+  ##  label: 'DOWNLOAD MY RESUME'
+  ##  link: #
+   ## icon: 'fa-download'
 
 ###########################3 Experience ##############################
 experience:
@@ -55,7 +55,7 @@ skill:
     - name: 'Unity'
       percentage: '100%'
 
-    - name: 'C# / C++'
+    - name: 'C# / Blueprints'
       percentage: '100%'
 
     - name: 'Making Cool Stuff'
@@ -73,8 +73,8 @@ funfacts:
       image: 'images/icons/award.png'
       count: '2'
 
-    - name: 'CURRENT PROJECTS'
-      image: 'images/icons/works.png'
+    - name: 'Dogs Pet Today'
+      image: 'images/icons/happy.png'
       count: '3'
 
 ############################# portfolio ################################
@@ -82,16 +82,70 @@ portfolio:
   enable: true
   title: 'MY WORK'
   portfolio_list:
-    - name: Hugo
-      image: 'images/portfolio/hugo.png'
+
+    - name: Netflix
+      image: 'images/portfolio/Netflix.png'
+      url: https://gohugo.io
+      description: Pitched, developed and delivered a 3000 word adventure for a book with a successful kickstarter campaign. Designed a game using FATE that cut onboarding time for new players by 1600%. Asked to write a second adventure for a new book on the theater world of renaissance England. 
+
+    - name: Magonomia
+      image: 'images/portfolio/Magonomia.webp'
+      url: https://gohugo.io
+      description: Pitched, developed and delivered a 3000 word adventure for a book with a successful kickstarter campaign. Designed a game using FATE that cut onboarding time for new players by 1600%. Asked to write a second adventure for a new book on the theater world of renaissance England. 
+
+    - name: 'USC Card Game: Cats Project'
+      image: 'images/portfolio/myth.png'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+    - name: 'Pacman Maze'
+      image: 'images/portfolio/pacman.png'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+    - name: 'What Happened to Faye?'
+      image: 'images/portfolio/Faye.png'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+    - name: 'Inner Child'
+      image: 'images/portfolio/Dreamer.png'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+    - name: 'Mother Ducker'
+      image: 'images/portfolio/MotherDucker.png'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+    - name: 'Hello Humans'
+      image: 'images/portfolio/HelloHumansBoard.jpg'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+    - name: 'Going Viral'
+      image: 'images/portfolio/GoingViral.jpg'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+    - name: Quest Friends Forever
+      image: 'images/portfolio/QFF2.jpg'
       url: https://gohugo.io
       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
 
-    - name: Hugo Themes
-      image: 'images/portfolio/hugothemes.png'
-      url: https://gohugo.io
+    - name: 'Rube Goldberg Machine'
+      image: 'images/portfolio/RubeModels.png'
       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
 
-    - name: Just A Design
-      image: 'images/portfolio/design.png'
+    - name: '583 Final Project'
+      image: 'images/portfolio/583Final.png'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+    - name: 'AR/XR Project'
+      image: 'images/portfolio/ar_build.jpg'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+ 
+    - name: 'Googly Eyes with Eighth Wall'
+      image: 'images/portfolio/Googly_Eyes.jpg'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+    - name: 'Hugging Face Project'
+      image: 'images/portfolio/HuggingFace.png'
+      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+
+    - name: 'Bad Christmas Sweaters Textures Project'
+      image: 'images/portfolio/Sweater.png'
       description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
