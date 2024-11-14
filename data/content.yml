@@ -13,7 +13,7 @@ hero:
   bg_image: '/images/PacmanComputer.png'
   # optional mobile breakpoint background
   mobile_bg_image: 'images/PacmanComputer.png'
-  video: 'https://youtu.be/CWYB8TFIP2I'
+ 
 
 ########################### About ##################################
 about:
