@@ -10,10 +10,9 @@ hero:
   
 
   # hero background image
-  bg_image: '/images/PacmanComputer.png'
+  bg_image: 'images/PacmanComputer.png'
   # optional mobile breakpoint background
   mobile_bg_image: 'images/PacmanComputer.png'
- 
 
 ########################### About ##################################
 about:
@@ -21,10 +20,6 @@ about:
   image: 'images/headshot.jpg'
   title: Games that make you go "Whoa! Wait... what?"
   content: I am a game designer and screenwriter, currently pursuing my Master's degree in Game Design at the University of Southern California. I have a passion for storytelling and creating immersive experiences that engage and entertain audiences. I am always looking for new opportunities to collaborate with other creatives and bring unique ideas to life.
-  ## button:
-  ##  label: 'DOWNLOAD MY RESUME'
-  ##  link: #
-   ## icon: 'fa-download'
 
 ###########################3 Experience ##############################
 experience:
