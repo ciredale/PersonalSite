@@ -65,7 +65,7 @@ funfacts:
       count: '15'
 
     - name: 'SCREENPLAY AWARDS'
-      image: 'images/icons/award.png'
+      image: 'images/icons/Award.png'
       count: '2'
 
     - name: 'Dogs Pet Today'
@@ -80,29 +80,28 @@ portfolio:
 
     - name: Netflix
       image: 'images/portfolio/Netflix.png'
-      url: https://gohugo.io
-      description: Pitched, developed and delivered a 3000 word adventure for a book with a successful kickstarter campaign. Designed a game using FATE that cut onboarding time for new players by 1600%. Asked to write a second adventure for a new book on the theater world of renaissance England. 
+      description: Wrote and filmed an episode of a show starring Ashton Kutcher, Sam Elliot and Debra Winger, which led to membership in the Writer’s Guild. While working on the series, I pitched story concepts and jokes using Final Draft. Three of the stories were used in the show and over a hundred jokes that I wrote were filmed. Netflix executives asked our writing team to include more political humor in the series and I created examples of how to do so without sacrificing our character’s likability. The New York Times quoted my joke in their review of the show and used it as a reference for how our show handled political humor. After which, this example became a core template for how to write and handle politics within the series. 
+ 
 
     - name: Magonomia
       image: 'images/portfolio/Magonomia.webp'
-      url: https://gohugo.io
       description: Pitched, developed and delivered a 3000 word adventure for a book with a successful kickstarter campaign. Designed a game using FATE that cut onboarding time for new players by 1600%. Asked to write a second adventure for a new book on the theater world of renaissance England. 
 
     - name: 'USC Card Game: Cats Project'
       image: 'images/portfolio/Myth.png'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: Created three enemy characters and two creatures for a game built in Unity and collaborated on using Perforce, sped up pre-production time by three weeks. Built a system for creature creation in Google Sheets using game design principles taught at USC that sped up narrative and game design timelines by two weeks. Collaborated on and presented a narrative deck that detailed the main narrative story, characters, creatures, and world building for the Art and Game Design teams. Created bark sheets and wrote character and creature dialogue. 
 
     - name: 'Pacman Maze'
       image: 'images/portfolio/pacman.png'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: What if you got stuck inside the Pacman Maze? This class project was a response to a prompt to create a maze for a character to travel through. At the start of the game, players are sucked into their computer. In order to escape, they have to dodge hungry Pacmen and ghosts or try to fight back using the weapons from DOOM. To create this game, my partner and I animated the PacMen in Blender, then used waypoints in Unity to have them follow predetermined paths. We also used Cinemanchine in Unity and multiple virtual cameras to create the camera effect of falling into the computer. 
 
     - name: 'What Happened to Faye?'
       image: 'images/portfolio/Faye.png'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: In this horror game, players navigate through a dream-like world that’s meant to represent the player’s subconscious. As the player interacts with objects in the world, they discover how they got trapped here and what they have to do to get out. 
 
     - name: 'Inner Child'
       image: 'images/portfolio/Dreamer.png'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: Thanks to new advancements in neural-link technology, you can now visit your inner child. This is a perfect way to shake up the boredom of adulthood and get more play into your life. But be careful, you never know what childhood trauma and tragedies might be lurking around the corner. Developed as a class project at USC Games, the prompt for Inner Child was to create a dream-like world in which players use objects in surprising combinations to solve puzzles in which we can create meaning.  
 
     - name: 'Mother Ducker'
       image: 'images/portfolio/MotherDucker.png'
@@ -110,37 +109,37 @@ portfolio:
 
     - name: 'Hello Humans'
       image: 'images/portfolio/HelloHumansBoard.jpg'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: In order to determine whether or not to destroy the human race, Aliens want you to tell them meaningful stories about the human experience. In this storytelling game, players are rewarded for sharing deeply emotional personal experiences. Can the players convince the alien overlords that the human race is worth saving or will they try to subvert them and mount a resistance? 
 
     - name: 'Going Viral'
       image: 'images/portfolio/GoingViral.jpg'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: Created as a class project at USC Games, Going Viral is an educational game about infection in the human body. Players take on the role of a virus that’s trying to reach the heart throught the bloodstream.
 
     - name: Quest Friends Forever
       image: 'images/portfolio/QFF2.jpg'
-      url: https://gohugo.io
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      url: https://www.youtube.com/watch?v=CWYB8TFIP2I
+      description: A solo developed video game project, Quest Friends Forever is a 2D Wizard Farming RPG with crafting and combat. Players re-wild a mountainside that has been stripped from it's magic by previous adventurers. Players can grow crops, raise animals, and explore the world to find the source of the magic.
 
     - name: 'Rube Goldberg Machine'
       image: 'images/portfolio/RubeModels.png'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: Made for a class project at USC, this Rube Goldberg Machine was modeled and animated in Maya. 
 
     - name: '583 Final Project'
       image: 'images/portfolio/Final.png'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: Currently in development as a class project at USC, this game is a Action RPG developed in Unreal Engine. 
 
     - name: 'AR/XR Project'
       image: 'images/portfolio/ar_build.jpg'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: Created for a class project at USC Games, this AR/XR project is a game that uses the AR/XR technology to place virtual objects in the real world.
  
     - name: 'Googly Eyes with Eighth Wall'
       image: 'images/portfolio/Googly_Eyes.jpg'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: Built for a class project at USC Games, Googly Eyes is a game that uses the Eighth Wall platform to create a game that uses the player's phone to track their eyes and replace them with googly eyes.
 
     - name: 'Hugging Face Project'
       image: 'images/portfolio/HuggingFace.png'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: Built for a class project at USC Games, this project uses Hugging Face algorithms to move a robot around a map based on prompts. 
 
     - name: 'Bad Christmas Sweaters Textures Project'
       image: 'images/portfolio/Sweater.png'
-      description: Commodo non mollit commodo esse. Quis ad Lorem eiusmod ad velit Lorem sint elit. Anim magna duis et duis pariatur eiusmod laboris esse. Sit duis labore sit esse enim laborum nisi sunt magna sint labore tempor. Sit sit sint eu laboris officia et sunt consequat sit excepteur nostrud eu. Fugiat aliqua id et pariatur quis commodo aute aliqua et magna officia eu cillum mollit. Sint culpa excepteur culpa culpa sint est eu dolore culpa duis adipisicing proident.
+      description: Built for a class project at USC Games, this project was an exploration of how to create and apply 2D textures in Maya. 

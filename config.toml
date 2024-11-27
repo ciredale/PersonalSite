@@ -52,10 +52,10 @@ weight = 3
 
 #################### default parameters ################################
 [params]
-copyright = "Copyright Burton Guster &copy;"
+copyright = "Copyright Chris Iredale;"
 # Meta data
-description = "Personal Portfolio"
-author = "Burton Guster"
+description = "Chris Iredale Game Designer"
+author = "Chris Iredale"
 favicon = "images/favicon.png"
 google_analytics = "G-ABCDEFG123"
 logo_light = "images/logo.svg"
@@ -70,19 +70,19 @@ preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 
 [[params.social]]
 icon = "fab fa-github"
-link = "https://github.com/tylerjlawson"
+link = "https://github.com/ciredale"
 
 [[params.social]]
 icon = "fab fa-linkedin"
-link = "https://www.linkedin.com/"
+link = "www.linkedin.com/in/chrisiredale"
 
-[[params.social]]
-icon = "fas fa-envelope"
-link = "mailto:guster@burton.com"
+##[[params.social]]##
+##icon = "fas fa-envelope"##
+##link = "mailto:guster@burton.com"##
 
-[[params.social]]
-icon = "fab fa-medium"
-link = "https://medium.com/@gusburton"
+##[[params.social]]##
+##icon = "fab fa-medium"##
+##link = "https://medium.com/@gusburton"##
 
 contentDir = "content/english"
 weight = 1
