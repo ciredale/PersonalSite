@@ -19,8 +19,7 @@ about:
   enable: true
   image: 'images/headshot.jpg'
   title: Games that make you go "Whoa! Wait... what?"
-  content: I am a game designer and screenwriter, currently pursuing my Master's degree in Game Design at the University of Southern California. I have a passion for storytelling and creating immersive experiences that engage and entertain audiences. I am always looking for new opportunities to collaborate with other creatives and bring unique ideas to life.
-
+  content: I am a game designer and screenwriter, currently pursuing my Master's degree in Game Design at the University of Southern California. I have a passion for storytelling and creating engaging and high action gameplay. I have experience in writing for television and film, as well as designing games for both tabletop and digital platforms. I am currently seeking a position in the game industry where I can use my skills to create innovative and engaging games that push the boundaries of storytelling and gameplay.
 ########################### Experience ##############################
 experience:
   enable: true
@@ -80,66 +79,34 @@ portfolio:
 
     - name: Netflix
       image: 'images/portfolio/Netflix.png'
-      description: Wrote and filmed an episode of a show starring Ashton Kutcher, Sam Elliot and Debra Winger, which led to membership in the Writer’s Guild. While working on the series, I pitched story concepts and jokes using Final Draft. Three of the stories were used in the show and over a hundred jokes that I wrote were filmed. Netflix executives asked our writing team to include more political humor in the series and I created examples of how to do so without sacrificing our character’s likability. The New York Times quoted my joke in their review of the show and used it as a reference for how our show handled political humor. After which, this example became a core template for how to write and handle politics within the series. 
+      description: I wrote and filmed an episode of a show starring Ashton Kutcher, Sam Elliot and Debra Winger, which led to membership in the Writer’s Guild. While working on the series, I pitched story concepts and jokes using Final Draft. Three of the stories were used in the show and over a hundred jokes that I wrote were filmed. Netflix executives asked our writing team to include more political humor in the series and I created examples of how to do so without sacrificing our character’s likability. The New York Times quoted my joke in their review of the show and used it as a reference for how our show handled political humor. After which, this example became a core template for how to write and handle politics within the series. 
  
-
     - name: Magonomia
       image: 'images/portfolio/Magonomia.webp'
-      description: Pitched, developed and delivered a 3000 word adventure for a book with a successful kickstarter campaign. Designed a game using FATE that cut onboarding time for new players by 1600%. Asked to write a second adventure for a new book on the theater world of renaissance England. 
+      url: https://shewstone.com/magonomia
+      description: I pitched, developed and delivered a 3000 word adventure for a book with a successful kickstarter campaign. The game is designed for the FATE Roleplaying system. My adventure cut onboarding time for new players by 1600%. Afterwards, I was asked to write a second adventure set in the theater world of Renaissance England. 
 
     - name: 'USC Card Game: Cats Project'
       image: 'images/portfolio/Myth.png'
-      description: Created three enemy characters and two creatures for a game built in Unity and collaborated on using Perforce, sped up pre-production time by three weeks. Built a system for creature creation in Google Sheets using game design principles taught at USC that sped up narrative and game design timelines by two weeks. Collaborated on and presented a narrative deck that detailed the main narrative story, characters, creatures, and world building for the Art and Game Design teams. Created bark sheets and wrote character and creature dialogue. 
-
-    - name: 'Pacman Maze'
-      image: 'images/portfolio/pacman.png'
-      description: What if you got stuck inside the Pacman Maze? This class project was a response to a prompt to create a maze for a character to travel through. At the start of the game, players are sucked into their computer. In order to escape, they have to dodge hungry Pacmen and ghosts or try to fight back using the weapons from DOOM. To create this game, my partner and I animated the PacMen in Blender, then used waypoints in Unity to have them follow predetermined paths. We also used Cinemanchine in Unity and multiple virtual cameras to create the camera effect of falling into the computer. 
-
-    - name: 'What Happened to Faye?'
-      image: 'images/portfolio/Faye.png'
-      description: In this horror game, players navigate through a dream-like world that’s meant to represent the player’s subconscious. As the player interacts with objects in the world, they discover how they got trapped here and what they have to do to get out. 
-
-    - name: 'Inner Child'
-      image: 'images/portfolio/Dreamer.png'
-      description: Thanks to new advancements in neural-link technology, you can now visit your inner child. This is a perfect way to shake up the boredom of adulthood and get more play into your life. But be careful, you never know what childhood trauma and tragedies might be lurking around the corner. Developed as a class project at USC Games, the prompt for Inner Child was to create a dream-like world in which players use objects in surprising combinations to solve puzzles in which we can create meaning.  
-
-    - name: 'Mother Ducker'
-      image: 'images/portfolio/MotherDucker.png'
-      description: In this game, players take on the role of a mother duck who has to protect her ducklings from man-made hazards, like shampoo and soap. Players have to use their wits and their motherly instincts to keep their ducklings safe.
-
-    - name: 'Hello Humans'
-      image: 'images/portfolio/HelloHumansBoard.jpg'
-      description: In order to determine whether or not to destroy the human race, Aliens want you to tell them meaningful stories about the human experience. In this storytelling game, players are rewarded for sharing deeply emotional personal experiences. Can the players convince the alien overlords that the human race is worth saving or will they try to subvert them and mount a resistance? 
-
-    - name: 'Going Viral'
-      image: 'images/portfolio/GoingViral.jpg'
-      description: Created as a class project at USC Games, Going Viral is an educational game about infection in the human body. Players take on the role of a virus that’s trying to reach the heart throught the bloodstream.
+      url: https://vimeo.com/932808293?share=copy
+      description: I worked as the narrative designer for this school-wide project at USC Games. For the project, I created three enemy characters and two creatures. I used Miro, Notion, Final Draft, Unity, Perforce, and GSuite to collaborate. My work sped up pre-production time by three weeks. I also built a system for creature creation in Google Sheets using game design principles taught at USC that sped up narrative and game design timelines by two weeks. Finally, I collaborated on and presented a narrative deck that detailed the main narrative story, characters, creatures, and world building for the Art and Game Design teams. Currently, I am creating bark sheets and writing character and creature dialogue for the project. 
 
     - name: Quest Friends Forever
       image: 'images/portfolio/QFF2.jpg'
       url: https://www.youtube.com/watch?v=CWYB8TFIP2I
       description: A solo developed video game project, Quest Friends Forever is a 2D Wizard Farming RPG with crafting and combat. Players re-wild a mountainside that has been stripped from it's magic by previous adventurers. Players can grow crops, raise animals, and explore the world to find the source of the magic.
 
-    - name: 'Rube Goldberg Machine'
-      image: 'images/portfolio/RubeModels.png'
-      description: Made for a class project at USC, this Rube Goldberg Machine was modeled and animated in Maya. 
+    - name: 'Once More Unto the Breach'
+      image: 'images/portfolio/OnceMore.png'
+      url: https://youtu.be/xl9UsBMbCSE
+      description: Solo-developed as a final project at USC Games in 583 Advanced Coding for Designers, Once More Into the Breach is inspired by the Stormlight Archive by Brandon Sanderson. Players take on the role of The Champion, an immortal being sent to rid a world of an occupying force of magical cultists. The Champion only has a limited amount of time on the planet before they are banished back to their home world. The game was solo-developed over the course of three weeks and designed in stages to allow for future development.
 
-    - name: '583 Final Project'
-      image: 'images/portfolio/Final.png'
-      description: Currently in development as a class project at USC, this game is a Action RPG developed in Unreal Engine. 
+    - name: 'Mother Ducker Prototype'
+      image: 'images/portfolio/MotherDucker.png'
+      url: https://crizzlepop.itch.io/lil-duckers
+      description: Originally solo-developed as a prototype at USC Games in 583 Advanced Coding for Designers, players take on the role of a mother duck who has to protect her ducklings from man-made hazards, like shampoo and soap. Players have to use their wits and their motherly instincts to keep their ducklings safe. The prompt for the project was to create a video game project that uses advanced techiques and has a hidden social message. My intent behind the game was to create a game that was fun and engaging, but also had a message about the difficulties of parenting and keeping children safe in world with an ever-changing environment.
 
-    - name: 'AR/XR Project'
-      image: 'images/portfolio/ar_build.jpg'
-      description: Created for a class project at USC Games, this AR/XR project is a game that uses the AR/XR technology to place virtual objects in the real world.
- 
-    - name: 'Googly Eyes with Eighth Wall'
-      image: 'images/portfolio/Googly_Eyes.jpg'
-      description: Built for a class project at USC Games, Googly Eyes is a game that uses the Eighth Wall platform to create a game that uses the player's phone to track their eyes and replace them with googly eyes.
-
-    - name: 'Hugging Face Project'
-      image: 'images/portfolio/HuggingFace.png'
-      description: Built for a class project at USC Games, this project uses Hugging Face algorithms to move a robot around a map based on prompts. 
-
-    - name: 'Bad Christmas Sweaters Textures Project'
-      image: 'images/portfolio/Sweater.png'
-      description: Built for a class project at USC Games, this project was an exploration of how to create and apply 2D textures in Maya. 
+    - name: 'BFF'
+      image: 'images/portfolio/Bff.png'
+      url: https://www.youtube.com/watch?v=QUkuSobtEy8
+      description: Developed as a narrative design project at USC Games, BFF is a 2D platformer with ChatGPT Integration in which the main character is training an AI model, while the game player's are also training an AI model in real life. The game was developed in Unity and uses ChatGPT to generate dialogue for the main character. Players walk through a 2D platforming world, collecting items that they can use to train the AI model. In doing so, they uncover the sad movtivations the main character has for training the AI- they lost their friend to a car accident and are trying to recreate them using the AI model. The game was developed in Unity and uses ChatGPT to generate dialogue for NPC's. I served as the lead designer/producer for this project. 
