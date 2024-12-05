@@ -1,94 +1,11 @@
 {{ define "main" }} {{- partial "menu.html" . -}} {{- partial "header.html" .
 -}}
 
-<!-- =============================
-       Start About Me
-    =============================== -->
-<section class="about-me" id="about">
-  <div class="container">
-    {{ if .Site.Data.content.about.enable }} {{ with .Site.Data.content.about }}
-    <div class="row about-me-holder">
-      <div
-        class="
-          col-lg-6 col-md-6 col-sm-6
-          about-me-text
-          d-flex
-          align-self-center
-        "
-      >
-        <div class="text-holder">
-          <h1>{{ .title | safeHTML }}</h1>
-          <p>{{ .content | markdownify | emojify }}</p>
-          {{ if .button.enable }} {{ with .button }}
-          <a
-            href="{{ .link | relURL }}"
-            target="_blank"
-            rel="noreferrer"
-            class="button download-cv"
-          >
-            {{ .label }} <i class="fa fa-download"></i
-          ></a>
-          {{ end }} {{ end }}
-        </div>
-      </div>
-      {{ with .image }}
-      <div class="col-lg-6 col-sm-6 col-9 about-me-images">
-        <img src="{{ . | relURL }}" alt="about-me" />
-      </div>
-      {{ end }}
-    </div>
-    {{ end }} {{ end }}
 
-    <div class="row experience-skill">
-      {{ if .Site.Data.content.experience.enable }} {{ with
-      .Site.Data.content.experience }}
-      <div class="col-lg-6 col-sm-6 col-11 experience">
-        <h2>{{ .title }}</h2>
-        <ul class="experience-chart">
-          {{ range .experience_list }}
-          {{ if not (eq .enable false) }}
-            <li>
-              <div class="single-experience">
-                <h3>{{ .name | markdownify }}</h3>
-                {{ with .company }}
-                <span>{{ . | markdownify }} |</span>
-                {{ end }} {{ with .duration }}
-                <span>{{ . | markdownify }}</span>
-                {{ end }} {{ with .content }}
-                <p>{{ . | markdownify }}</p>
-                {{ end }}
-              </div>
-            </li>
-          {{ end }}
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }} {{ end }} {{ if .Site.Data.content.skill.enable }} {{ with
-      .Site.Data.content.skill }}
-      <div class="col-lg-6 col-sm-6 col-11 skill">
-        <h2>{{ .title }}</h2>
-        <div class="skill-progress-bar">
-          {{ range .skill_list }}
-          <div class="clearfix">
-            <span class="skillbar-title">{{ .name }}</span>
-            {{ if .Site.Data.content.skill.showpercent }}
-            <span class="skill-bar-percent">{{ .percentage }}</span>
-            {{ end }}
-            <div class="skillbar" data-percent="{{ .percentage }}">
-              <div class="skillbar-bar"></div>
-            </div>
-          </div>
-          {{ end }}
-        </div>
-      </div>
-      {{ end }} {{ end }}
-    </div>
-  </div>
-</section>
-<!-- =============================
-      End About Me
-    =============================== -->
 
+<!-- =============================
+       Fun Facts Section
+    =============================== -->
 {{ if .Site.Data.content.funfacts.enable }} {{ with .Site.Data.content.funfacts
 }}
 <div class="fun-facts container pt-5">
@@ -101,6 +18,7 @@
   {{ end }}
 </div>
 {{ end }} {{ end }}
+
 
 <!-- =============================
        Start Portfolio
@@ -142,5 +60,52 @@
 <!-- =============================
        End Portfolio
     =============================== -->
+
+<!-- =============================
+       Start About Me
+    =============================== -->
+    <section class="about-me" id="about">
+      <div class="container">
+        {{ if .Site.Data.content.about.enable }} {{ with .Site.Data.content.about }}
+        <div class="row about-me-holder">
+          <div
+            class="
+              col-lg-6 col-md-6 col-sm-6
+              about-me-text
+              d-flex
+              align-self-center
+            "
+          >
+            <div class="text-holder">
+              <h1>{{ .title | safeHTML }}</h1>
+              <p>{{ .content | markdownify | emojify }}</p>
+              {{ if .button.enable }} {{ with .button }}
+              <a
+                href="{{ .link | relURL }}"
+                target="_blank"
+                rel="noreferrer"
+                class="button download-cv"
+              >
+                {{ .label }} <i class="fa fa-download"></i
+              ></a>
+              {{ end }} {{ end }}
+            </div>
+          </div>
+          {{ with .image }}
+          <div class="col-lg-6 col-sm-6 col-9 about-me-images">
+            <img src="{{ . | relURL }}" alt="about-me" />
+          </div>
+          {{ end }}
+        </div>
+        {{ end }} {{ end }}
+    
+      </div>
+    </section>
+    <!-- =============================
+          End About Me
+        =============================== -->
+
+
+
 
 {{- partial "footer.html" . -}} {{ end }}
