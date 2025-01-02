@@ -1,7 +1,7 @@
 /*--------------------------------
    Start Preloader & General Styling
 ----------------------------------*/
-@keyframes "fadeInUp" {
+@keyframes fadeInUp {
   0% {
     opacity: 0;
     transform: translateY(100px);
@@ -19,7 +19,7 @@
 ----------------------------------*/
 /* ========= Header ======= */
 /* ========= Full Screen Navigation ======= */
-@keyframes "move" {
+@keyframes move {
   0% {
     top: 0px;
   }
@@ -1082,6 +1082,15 @@ ul.experience-chart {
   height: 100%;
   overflow: hidden;
   img {
+    object-fit: cover;
+    min-height: 100%;
+    width: 100%;
+  }
+}
+.hero-video {
+  height: 100%;
+  overflow: hidden;
+  video {
     object-fit: cover;
     min-height: 100%;
     width: 100%;

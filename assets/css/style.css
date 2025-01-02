@@ -1263,6 +1263,17 @@ ul.experience-chart h4 {
   width: 100%;
 }
 
+.hero-video {
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-video video {
+  object-fit: cover;
+  min-height: 100%;
+  width: 100%;
+}
+
 .footer-icon:hover {
   color: #818aa3;
 }

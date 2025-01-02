@@ -10,9 +10,9 @@ hero:
   
 
   # hero background image
-  bg_image: 'images/PacmanComputer.png'
+  bg_video: 'videos/MainVid.mp4'
   # optional mobile breakpoint background
-  mobile_bg_image: 'images/PacmanComputer.png'
+  mobile_bg_video: 'videos/MainVid.mp4'
 
 ########################### About ##################################
 about:
