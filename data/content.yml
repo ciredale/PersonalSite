@@ -4,9 +4,8 @@ hero:
 
   # animated text loop
   occupations:
-    - 'Game Designer'
-    - 'Screenwriter'
-    - 'RPG Designer'
+    - 'Game Designer / Screenwriter / RPG Designer / Tech Artist'
+  
   
 
   # hero background image
@@ -19,10 +18,10 @@ about:
   enable: true
   image: 'images/headshot.jpg'
   title: Games that make you go "Whoa! Wait... what?"
-  content: I am a game designer and screenwriter, currently pursuing my Master's degree in Game Design at the University of Southern California. I have a passion for storytelling and creating engaging and high action gameplay. I have experience in writing for television and film, as well as designing games for both tabletop and digital platforms. I am currently seeking a position in the game industry where I can use my skills to create innovative and engaging games that push the boundaries of storytelling and gameplay.
+  content: Hi! My name is Chris Iredale. I’m a Master’s student in Game Design at the University of Southern California. I’m passionate about storytelling and crafting high-energy, engaging gameplay experiences. My background includes writing for television and film, as well as designing games for both tabletop and digital platforms. I’m actively seeking a position in the game industry where I can leverage my skills to create innovative games that redefine storytelling and gameplay.
 ########################### Experience ##############################
 experience:
-  enable: true
+  enable: false
   title: 'EXPERIENCE'
   experience_list:
     - name: RPG Designer
@@ -39,7 +38,7 @@ experience:
 
 ############################### Skill #################################
 skill:
-  enable: true
+  enable: false
   title: 'SKILLS'
   showpercent: false
   skill_list:
@@ -78,35 +77,73 @@ portfolio:
   portfolio_list:
 
     - name: Netflix
-      image: 'images/portfolio/Netflix.png'
-      description: I wrote and filmed an episode of a show starring Ashton Kutcher, Sam Elliot and Debra Winger, which led to membership in the Writer’s Guild. While working on the series, I pitched story concepts and jokes using Final Draft. Three of the stories were used in the show and over a hundred jokes that I wrote were filmed. Netflix executives asked our writing team to include more political humor in the series and I created examples of how to do so without sacrificing our character’s likability. The New York Times quoted my joke in their review of the show and used it as a reference for how our show handled political humor. After which, this example became a core template for how to write and handle politics within the series. 
- 
+      video: 'images/portfolio/RanchVid.mp4'
+      description: 
+       - '- Wrote and filmed an episode of the critically acclaimed Netflix series The Ranch starring Ashton Kutcher, Sam Elliot and Debra Winger, which led to membership in the Writer’s Guild. ' 
+       - '- While working on the series, I pitched story concepts and jokes using Final Draft. Three of the stories were used in the show and over a hundred of my jokes were filmed. '
+       - '- Netflix executives asked our writing team to include more political humor in the series and I created examples of how to do so without sacrificing our character’s likability.'
+       - '- The New York Times quoted my joke in their review of the show and used it as a reference for how our show handled political humor. After which, this example became a core template for how to write and handle politics within the series.'
+      hover_text: 'The Ranch on Netflix: Wrote an episode of the series. My work was quoted in the New York Times review of the show. Click for more info.'
+
     - name: Magonomia
-      image: 'images/portfolio/Magonomia.webp'
-      url: https://shewstone.com/magonomia
-      description: I pitched, developed and delivered a 3000 word adventure for a book with a successful kickstarter campaign. The game is designed for the FATE Roleplaying system. My adventure cut onboarding time for new players by 1600%. Afterwards, I was asked to write a second adventure set in the theater world of Renaissance England. 
+      video: 'images/portfolio/MagVid.mp4'
+      ##url: https://shewstone.com/magonomia
+      description: 
+       - "- Pitched, developed, and delivered two 3000 word adventures for a new roleplaying game with a successful kickstarter campaign set in Elizabethan England."
+       - "- The game is designed for the FATE Roleplaying System. It can also be ammended to work with other systems like Pathfinder."
+       - "- One of the adventures was designed for new players and cut onboarding time by 1600%."
+       - "- The second adventure is set in the theater world of Renaissance England."
+      hover_text: 'Magonomia: Pitched, wrote and delivered two 3000 word adventures for a new roleplaying game, which cut onboarding time for new players by 1600%. Click for more info.'
 
     - name: 'USC Card Game: Cats Project'
-      image: 'images/portfolio/Myth.png'
-      url: https://vimeo.com/932808293?share=copy
-      description: I worked as the narrative designer for this school-wide project at USC Games. For the project, I created three enemy characters and two creatures. I used Miro, Notion, Final Draft, Unity, Perforce, and GSuite to collaborate. My work sped up pre-production time by three weeks. I also built a system for creature creation in Google Sheets using game design principles taught at USC that sped up narrative and game design timelines by two weeks. Finally, I collaborated on and presented a narrative deck that detailed the main narrative story, characters, creatures, and world building for the Art and Game Design teams. Currently, I am creating bark sheets and writing character and creature dialogue for the project. 
+      video: 'images/portfolio/MythVid.mp4'
+      ##url: https://vimeo.com/932808293?share=copy
+      description: 
+       - '- Currently serving as the narrative designer for this school-wide project at USC Games. The project is currently in development and will be released at the USC Games Expo in May 2025.'
+       - '- For the project, I created three enemy characters and two creatures. My work sped up pre-production time by three weeks.'
+       - '- I used Miro, Notion, Final Draft, Unity, Perforce, and GSuite to collaborate with the art, design, UI/UX and production departments.' 
+       - '- I built a system for creature creation in Google Sheets using game design principles taught at USC that sped up narrative and game design timelines by two weeks.' 
+       - '- I collaborated on and presented a narrative deck that detailed the main narrative story, characters, creatures, and world building for the art and game design teams.' 
+       - '- Currently, I am creating bark sheets and writing character and creature dialogue for the project.'
+      hover_text: 'USC Card Game: Cats Project: A USC Games school-wide project in which I served as the narrative designer. Click for more info.'
 
     - name: Quest Friends Forever
-      image: 'images/portfolio/QFF2.jpg'
-      url: https://www.youtube.com/watch?v=CWYB8TFIP2I
-      description: A solo developed video game project, Quest Friends Forever is a 2D Wizard Farming RPG with crafting and combat. Players re-wild a mountainside that has been stripped from it's magic by previous adventurers. Players can grow crops, raise animals, and explore the world to find the source of the magic.
+      video: 'images/portfolio/QFFVid.mp4'
+      ##url: https://www.youtube.com/watch?v=CWYB8TFIP2I
+      description:
+       - "- A solo developed video game project, Quest Friends Forever is a 2D Wizard Farming RPG with crafting, combat, dialogue, and quests."
+       - "- Players re-wild a mountainside that has been stripped of it's magic by previous adventurers."
+       - "- Players can grow crops, raise animals, make friends in the village, and explore the world to find the source of the magic."
+       - "- I developed the game in Game Maker Studio with GML for the codebase. I drew the artwork and animated it in Asesprite. I also composed and recorded the music in Abelton Live."
+      hover_text: 'Quest Friends Forever: A solo-developed project which I coded, drew artwork, animated sprites, composited VFX, composed music, and recorded an original soundtrack. Click for more info.'
 
     - name: 'Once More Unto the Breach'
-      image: 'images/portfolio/OnceMore.png'
-      url: https://youtu.be/xl9UsBMbCSE
-      description: Solo-developed as a final project at USC Games in 583 Advanced Coding for Designers, Once More Into the Breach is inspired by the Stormlight Archive by Brandon Sanderson. Players take on the role of The Champion, an immortal being sent to rid a world of an occupying force of magical cultists. The Champion only has a limited amount of time on the planet before they are banished back to their home world. The game was solo-developed over the course of three weeks and designed in stages to allow for future development.
+      video: 'images/portfolio/OnceVid.mp4'
+      ##url: https://youtu.be/xl9UsBMbCSE
+      description: 
+       - '- Once More Into the Breach is a time-trial RPG. Players take on the role of The Champion, an immortal being sent to rid a world of an occupying force of magical cultists.'
+       - "- I built this vertical slice over the course of three weeks. It's core concept was designed so that I can continue further development in stages."
+       - "- The game uses the Niagra Particle System for spell effects and damage indicators."
+       - "- The game was developed in Unreal Engine using Blueprints and C++."
+      hover_text: 'Once More Unto the Breach: A solo-developed project in Unreal Engine that uses Blueprints, C++ and the Niagra Particle System. Click for more info.'
 
     - name: 'Mother Ducker Prototype'
-      image: 'images/portfolio/MotherDucker.png'
-      url: https://crizzlepop.itch.io/lil-duckers
-      description: Originally solo-developed as a prototype at USC Games in 583 Advanced Coding for Designers, players take on the role of a mother duck who has to protect her ducklings from man-made hazards, like shampoo and soap. Players have to use their wits and their motherly instincts to keep their ducklings safe. The prompt for the project was to create a video game project that uses advanced techiques and has a hidden social message. My intent behind the game was to create a game that was fun and engaging, but also had a message about the difficulties of parenting and keeping children safe in world with an ever-changing environment.
+      video: 'images/portfolio/DucksVid.mp4'
+      ##url: https://crizzlepop.itch.io/lil-duckers
+      description: 
+       - '- In Mother Ducker, players take on the role of a mother duck who has to protect her ducklings from man-made hazards, like shampoo and soap.'
+       - "- I created all of the models in Maya, animated them in Maya, and then imported them into Unity. I also used Unity's AI pathfinding system to create complex AI for the ducklings to follow the Mother Duck."
+       - '- I built a state machine for the baby ducks to attach and detatch from the mother duck.'
+       - '- My intent with this project was to create a game that was fun and engaging, but also had a message about the difficulties of parenting and keeping children safe in world with an ever-changing environment.'
+      hover_text: 'Mother Ducker: A solo-developed project in Unity, which uses complex AI pathfinding. Click for more info.'
 
     - name: 'BFF'
-      image: 'images/portfolio/Bff.png'
-      url: https://www.youtube.com/watch?v=QUkuSobtEy8
-      description: Developed as a narrative design project at USC Games, BFF is a 2D platformer with ChatGPT Integration in which the main character is training an AI model, while the game player's are also training an AI model in real life. The game was developed in Unity and uses ChatGPT to generate dialogue for the main character. Players walk through a 2D platforming world, collecting items that they can use to train the AI model. In doing so, they uncover the sad movtivations the main character has for training the AI- they lost their friend to a car accident and are trying to recreate them using the AI model. The game was developed in Unity and uses ChatGPT to generate dialogue for NPC's. I served as the lead designer/producer for this project. 
+      video: 'images/portfolio/BFFVid.mp4'
+      ##url: https://www.youtube.com/watch?v=QUkuSobtEy8
+      description: 
+       - "- Developed as a narrative design project at USC Games, BFF is a 2D platformer with ChatGPT API Integration." 
+       - "- Players traverse across a 2D platforming world, collecting items that they can use to train the AI model. In doing so, they uncover that the main character lost their friend in a car accident and they are recreating them using the AI model."
+       - "- The game was developed in Unity using the Corgi Engine and uses ChatGPT API for AI dialogue discussions."
+       - "- The AI in the game was trained using a fifteen page script and prompted for each interaction with the players."
+       - "- I served as the lead designer/producer for this project."
+      hover_text: 'BFF: A narrative design project in which players train an AI model in real life while training an AI model in the game. Click for more info.'

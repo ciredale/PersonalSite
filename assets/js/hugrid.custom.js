@@ -31,11 +31,11 @@ $special = $event.special.debouncedresize = {
 var BLANK =
   'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 
-$.fn.imagesLoaded = function (callback) {
+$.fn.videosLoaded = function (callback) {
   var $this = this,
     deferred = typeof $.Deferred === 'function' ? $.Deferred() : 0,
     hasNotify = typeof deferred.notify === 'function',
-    $images = $this.find('img').add($this.filter('img')),
+    $videos = $this.find('video').add($this.filter('video')),
     loaded = [],
     proper = [],
     broken = [];
@@ -56,60 +56,60 @@ $.fn.imagesLoaded = function (callback) {
 
     if (deferred) {
       if (broken.length) {
-        deferred.reject($images, $proper, $broken);
+        deferred.reject($videos, $proper, $broken);
       } else {
-        deferred.resolve($images);
+        deferred.resolve($videos);
       }
     }
 
     if (typeof callback === 'function') {
-      callback.call($this, $images, $proper, $broken);
+      callback.call($this, $videos, $proper, $broken);
     }
   }
 
-  function imgLoaded(img, isBroken) {
-    if (img.src === BLANK || $.inArray(img, loaded) !== -1) {
+  function videoLoaded(video, isBroken) {
+    if (video.src === BLANK || $.inArray(video, loaded) !== -1) {
       return;
     }
 
-    loaded.push(img);
+    loaded.push(video);
 
     if (isBroken) {
-      broken.push(img);
+      broken.push(video);
     } else {
-      proper.push(img);
+      proper.push(video);
     }
 
-    $.data(img, 'imagesLoaded', { isBroken: isBroken, src: img.src });
+    $.data(video, 'videosLoaded', { isBroken: isBroken, src: video.src });
 
     if (hasNotify) {
-      deferred.notifyWith($(img), [isBroken, $images, $(proper), $(broken)]);
+      deferred.notifyWith($(video), [isBroken, $videos, $(proper), $(broken)]);
     }
 
-    if ($images.length === loaded.length) {
+    if ($videos.length === loaded.length) {
       setTimeout(doneLoading);
-      $images.off('.imagesLoaded');
+      $videos.off('.videosLoaded');
     }
   }
 
-  if (!$images.length) {
+  if (!$videos.length) {
     doneLoading();
   } else {
-    $images
-      .on('load.imagesLoaded error.imagesLoaded', function (event) {
-        imgLoaded(event.target, event.type === 'error');
+    $videos
+      .on('loadeddata.videosLoaded error.videosLoaded', function (event) {
+        videoLoaded(event.target, event.type === 'error');
       })
       .each(function (i, el) {
         var src = el.src;
 
-        var cached = $.data(el, 'imagesLoaded');
+        var cached = $.data(el, 'videosLoaded');
         if (cached && cached.src === src) {
-          imgLoaded(el, cached.isBroken);
+          videoLoaded(el, cached.isBroken);
           return;
         }
 
-        if (el.complete && el.naturalWidth !== undefined) {
-          imgLoaded(el, el.naturalWidth === 0 || el.naturalHeight === 0);
+        if (el.readyState >= 3) {
+          videoLoaded(el, el.videoWidth === 0 || el.videoHeight === 0);
           return;
         }
 
@@ -151,7 +151,7 @@ var Grid = (function () {
   function init(config) {
     settings = $.extend(true, {}, settings, config);
 
-    $grid.imagesLoaded(function () {
+    $grid.videosLoaded(function () {
       saveItemInfo(true);
       getWinSize();
       initEvents();
@@ -267,13 +267,13 @@ var Grid = (function () {
         this.$href
       );
       this.$loading = $('<div class="og-loading"></div>');
-      this.$fullimage = $('<div class="og-fullimg"></div>').append(
+      this.$fullvideo = $('<div class="og-fullvideo"></div>').append(
         this.$loading
       );
       this.$closePreview = $('<span class="og-close"></span>');
       this.$previewInner = $('<div class="og-expander-inner"></div>').append(
         this.$closePreview,
-        this.$fullimage,
+        this.$fullvideo,
         this.$details
       );
       this.$previewEl = $('<div class="og-expander"></div>').append(
@@ -335,22 +335,22 @@ var Grid = (function () {
 
       var self = this;
 
-      if (typeof self.$largeImg != 'undefined') {
-        self.$largeImg.remove();
+      if (typeof self.$largeVideo != 'undefined') {
+        self.$largeVideo.remove();
       }
 
-      if (self.$fullimage.is(':visible')) {
+      if (self.$fullvideo.is(':visible')) {
         this.$loading.show();
-        $('<img/>')
-          .on('load', function () {
-            var $img = $(this);
+        $('<video controls autoplay/>')
+          .on('loadeddata', function () {
+            var $video = $(this);
             if (
-              $img.attr('src') === self.$item.children('a').data('largesrc')
+              $video.attr('src') === self.$item.children('a').data('largesrc')
             ) {
               self.$loading.hide();
-              self.$fullimage.find('img').remove();
-              self.$largeImg = $img.fadeIn(350);
-              self.$fullimage.append(self.$largeImg);
+              self.$fullvideo.find('video').remove();
+              self.$largeVideo = $video.fadeIn(350);
+              self.$fullvideo.append(self.$largeVideo);
             }
           })
           .attr('src', eldata.largesrc);
@@ -377,8 +377,8 @@ var Grid = (function () {
 
       setTimeout(
         $.proxy(function () {
-          if (typeof this.$largeImg !== 'undefined') {
-            this.$largeImg.fadeOut('fast');
+          if (typeof this.$largeVideo !== 'undefined') {
+            this.$largeVideo.fadeOut('fast');
           }
           this.$previewEl.css('height', 0);
           var $expandedItem = $items.eq(this.expandedIdx);

@@ -611,7 +611,7 @@ label {
   right: 0;
   height: 55px;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-weight: bold;
   transition: background 1s;
 }
@@ -640,7 +640,7 @@ label {
   a {
     text-decoration: none;
     color: #fff;
-    font-size: 17px;
+    font-size: 34px;
     transition: color 1s;
   }
 }
@@ -952,6 +952,117 @@ ul.experience-chart {
     position: relative;
   }
 }
+.og-fullvideo video {
+  width: 780px;
+  height: 500px;
+}
+
+.og-expander {
+  position: absolute; /* Position relative to the parent */
+  left: 0;
+  width: 100%; /* Full width of the parent */
+  background: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.og-expander-inner {
+  display: flex; /* Use flexbox to arrange children side by side */
+  padding: 20px;
+}
+
+.og-fullvideo {
+  flex: 0 0 780px; /* Fix the width of the video container */
+  height: 500px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.og-details {
+  flex: 1; /* Allow the details section to take up remaining space */
+  padding: 20px;
+}
+
+.og-details h3 {
+  font-size: 48px;
+  color: #4d4d4d;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.og-details p {
+  font-size: 24px;
+  color: #6f6f6f;
+  line-height: 1.5;
+}
+
+.og-details ul {
+  list-style: disc; /* Remove default list style */
+  padding-left: 10px; /* Remove default padding */
+}
+
+.og-details ul li {
+  padding-left: 30px; /* Add padding to the left for custom marker */
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.og-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #fff;
+  background: #000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.og-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.video-container {
+  position: relative;
+  display: inline-block;
+}
+
+.video-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
 .under-menu {
   margin-top: 80px;
 }

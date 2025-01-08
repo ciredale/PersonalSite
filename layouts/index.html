@@ -1,13 +1,9 @@
-{{ define "main" }} {{- partial "menu.html" . -}} {{- partial "header.html" .
--}}
-
-
+{{ define "main" }} {{- partial "menu.html" . -}} {{- partial "header.html" . -}}
 
 <!-- =============================
        Fun Facts Section
     =============================== -->
-{{ if .Site.Data.content.funfacts.enable }} {{ with .Site.Data.content.funfacts
-}}
+{{ if .Site.Data.content.funfacts.enable }} {{ with .Site.Data.content.funfacts }}
 <div class="fun-facts container pt-5">
   {{ range .funfacts_list }}
   <div class="fun-fact-holder">
@@ -19,12 +15,11 @@
 </div>
 {{ end }} {{ end }}
 
-
 <!-- =============================
        Start Portfolio
     =============================== -->
-{{ if .Site.Data.content.portfolio.enable }} {{ with
-.Site.Data.content.portfolio }}
+{{ if .Site.Data.content.portfolio.enable }} 
+{{ with .Site.Data.content.portfolio }}
 <section class="portfolio" id="portfolio">
   <div class="container-fluid text-center">
     <div class="row portfolio-holder text-left">
@@ -32,31 +27,41 @@
         <h2>{{ .title }}</h2>
       </div>
       <ul id="og-grid" class="og-grid">
-        {{ range .portfolio_list }} {{ $image := resources.Get .image }} {{
-        $big_image := $image.Fill "780x500 jpg" }} {{ $sm_image := $image.Fill
-        "395x250 jpg" }} {{ $parsed_name := replace .name "." "" }}
-        <li>
-          <p id="description-{{ $parsed_name | urlize }}" class="hidden">
-            {{ .description | markdownify }}
-          </p>
-          <a
-            href="{{ .url }}"
-            data-largesrc="{{ $big_image.RelPermalink }}"
-            data-title="{{ .name }}"
-            data-buttontext="SEE SITE"
-          >
-            <img
-              src="{{ $sm_image.RelPermalink }}"
-              alt="{{ $parsed_name }} image"
-            />
-          </a>
-        </li>
+        {{ range .portfolio_list }}
+          {{ $video := resources.Get .video }}
+          {{ $big_video := $video.RelPermalink }}
+          {{ $sm_video := $video.RelPermalink }}
+          {{ $parsed_name := replace .name "." "" }}
+          <li>
+            <ul id="description-{{ $parsed_name | urlize }}" class="hidden">
+              {{ range .description }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+            <a
+              href="{{ .url }}"
+              data-largesrc="{{ $big_video }}"
+              data-title="{{ .name }}"
+              data-buttontext="SEE SITE"
+            >
+              <div class="video-container">
+                <video width="395" height="250" autoplay muted loop playsinline>
+                  <source src="{{ $sm_video }}" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+                <div class="overlay">
+                  <div class="overlay-text">{{ .hover_text }}</div>
+                </div>
+              </div>
+            </a>
+          </li>
         {{ end }}
       </ul>
     </div>
   </div>
 </section>
-{{ end }} {{ end }}
+{{ end }} 
+{{ end }}
 <!-- =============================
        End Portfolio
     =============================== -->
@@ -64,48 +69,49 @@
 <!-- =============================
        Start About Me
     =============================== -->
-    <section class="about-me" id="about">
-      <div class="container">
-        {{ if .Site.Data.content.about.enable }} {{ with .Site.Data.content.about }}
-        <div class="row about-me-holder">
-          <div
-            class="
-              col-lg-6 col-md-6 col-sm-6
-              about-me-text
-              d-flex
-              align-self-center
-            "
+<section class="about-me" id="about">
+  <div class="container">
+    {{ if .Site.Data.content.about.enable }} 
+    {{ with .Site.Data.content.about }}
+    <div class="row about-me-holder">
+      <div
+        class="
+          col-lg-6 col-md-6 col-sm-6
+          about-me-text
+          d-flex
+          align-self-center
+        "
+      >
+        <div class="text-holder">
+          <h1>{{ .title | safeHTML }}</h1>
+          <p>{{ .content | markdownify | emojify }}</p>
+          {{ if .button.enable }} 
+          {{ with .button }}
+          <a
+            href="{{ .link | relURL }}"
+            target="_blank"
+            rel="noreferrer"
+            class="button download-cv"
           >
-            <div class="text-holder">
-              <h1>{{ .title | safeHTML }}</h1>
-              <p>{{ .content | markdownify | emojify }}</p>
-              {{ if .button.enable }} {{ with .button }}
-              <a
-                href="{{ .link | relURL }}"
-                target="_blank"
-                rel="noreferrer"
-                class="button download-cv"
-              >
-                {{ .label }} <i class="fa fa-download"></i
-              ></a>
-              {{ end }} {{ end }}
-            </div>
-          </div>
-          {{ with .image }}
-          <div class="col-lg-6 col-sm-6 col-9 about-me-images">
-            <img src="{{ . | relURL }}" alt="about-me" />
-          </div>
+            {{ .label }} <i class="fa fa-download"></i>
+          </a>
+          {{ end }} 
           {{ end }}
         </div>
-        {{ end }} {{ end }}
-    
       </div>
-    </section>
-    <!-- =============================
-          End About Me
-        =============================== -->
+      {{ with .image }}
+      <div class="col-lg-6 col-sm-6 col-9 about-me-images">
+        <img src="{{ . | relURL }}" alt="about-me" />
+      </div>
+      {{ end }}
+    </div>
+    {{ end }} 
+    {{ end }}
+  </div>
+</section>
+<!-- =============================
+      End About Me
+    =============================== -->
 
-
-
-
-{{- partial "footer.html" . -}} {{ end }}
+{{- partial "footer.html" . -}} 
+{{ end }}
