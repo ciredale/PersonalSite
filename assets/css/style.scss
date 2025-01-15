@@ -1523,6 +1523,25 @@ ul.experience-chart {
   .desktop-menu-logo {
     display: block; /* Show desktop menu logo */
   }
+
+  .menu-container {
+    justify-content: flex-end;
+    padding: 0px 20px;
+    height: 0px;
+    background: #fff;
+  }
+
+  .og-details h3 {
+    font-size: 36px; /* Default font size for larger screens */
+  }
+
+  .og-details p {
+    font-size: 16px; /* Default font size for larger screens */
+  }
+
+  .og-details ul li {
+    font-size: 16px; /* Default font size for larger screens */
+  }
 }
 @media (max-width: 600px) {
   .about-me {
