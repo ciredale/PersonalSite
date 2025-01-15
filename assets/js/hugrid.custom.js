@@ -247,57 +247,57 @@ var Grid = (function () {
     $.removeData(this, 'preview');
   }
 
-  function Preview($item) {
-    this.$item = $item;
-    this.expandedIdx = Array.from($items).findIndex((d) => d == this.$item[0]);
-    this.create();
-    this.update();
-  }
+ function Preview($item) {
+  this.$item = $item;
+  this.expandedIdx = Array.from($items).findIndex((d) => d == this.$item[0]);
+  this.create();
+  this.update();
+}
 
-  Preview.prototype = {
-    create: function () {
-      this.$title = $('<h3></h3>');
-      this.$description = $('<p></p>');
-      this.$href = $(
-        '<a href="#" class="button" target="_blank" rel="noreferrer">{{ .Site.Params.buttontext }}</a>'
-      );
-      this.$details = $('<div class="og-details"></div>').append(
-        this.$title,
-        this.$description,
-        this.$href
-      );
-      this.$loading = $('<div class="og-loading"></div>');
-      this.$fullvideo = $('<div class="og-fullvideo"></div>').append(
-        this.$loading
-      );
-      this.$closePreview = $('<span class="og-close"></span>');
-      this.$previewInner = $('<div class="og-expander-inner"></div>').append(
-        this.$closePreview,
-        this.$fullvideo,
-        this.$details
-      );
-      this.$previewEl = $('<div class="og-expander"></div>').append(
-        this.$previewInner
-      );
-      this.$item.append(this.getEl());
-      if (support) {
-        this.setTransition();
+Preview.prototype = {
+  create: function () {
+    this.$title = $('<h3></h3>');
+    this.$description = $('<p></p>');
+    this.$href = $(
+      '<a href="#" class="button" target="_blank" rel="noreferrer">{{ .Site.Params.buttontext }}</a>'
+    );
+    this.$details = $('<div class="og-details"></div>').append(
+      this.$title,
+      this.$description,
+      this.$href
+    );
+    this.$loading = $('<div class="og-loading"></div>');
+    this.$fullvideo = $('<div class="og-fullvideo"></div>').append(
+      this.$loading
+    );
+    this.$closePreview = $('<span class="og-close"></span>');
+    this.$previewInner = $('<div class="og-expander-inner"></div>').append(
+      this.$closePreview,
+      this.$fullvideo,
+      this.$details
+    );
+    this.$previewEl = $('<div class="og-expander"></div>').append(
+      this.$previewInner
+    );
+    this.$item.append(this.getEl());
+    if (support) {
+      this.setTransition();
       }
     },
     update: function ($item) {
       if ($item) {
         this.$item = $item;
       }
-
+  
       if (current !== -1) {
         var $currentItem = $items.eq(current);
         $currentItem.removeClass('og-expanded');
         this.$item.addClass('og-expanded');
         this.positionPreview();
       }
-
+  
       current = this.$item.index();
-
+  
       function formatForUrl(str) {
         return str
           .replace(/_/g, '-')
@@ -309,7 +309,7 @@ var Grid = (function () {
           .replace(/-{2,}/g, '-')
           .toLowerCase();
       }
-
+  
       var $itemEl = this.$item.children('a'),
         eldata = {
           href: $itemEl.attr('href'),
@@ -320,12 +320,12 @@ var Grid = (function () {
           ).html(),
           buttontext: $itemEl.data('buttontext')
         };
-
+  
       this.$title.html(eldata.title);
       this.$description.html(eldata.description);
       if (eldata.buttontext) this.$href.text(eldata.buttontext);
       else this.$href.text('{{ .Site.Params.buttontext }}');
-
+  
       if (eldata.href) {
         this.$href.attr('href', eldata.href);
         this.$href.show();
@@ -355,6 +355,9 @@ var Grid = (function () {
           })
           .attr('src', eldata.largesrc);
       }
+
+      // Adjust the height of the .og-expander based on the content
+      this.adjustHeight();
     },
     open: function () {
       setTimeout(
@@ -451,6 +454,12 @@ var Grid = (function () {
     },
     getEl: function () {
       return this.$previewEl;
+    },
+    adjustHeight: function () {
+      var videoHeight = this.$fullvideo.outerHeight();
+      var detailsHeight = this.$details.outerHeight();
+      var newHeight = Math.max(videoHeight, detailsHeight) + 40; // Add some padding
+      this.$previewEl.css('height', newHeight);
     }
   };
 

@@ -1491,6 +1491,18 @@ ul.experience-chart {
   .about-me {
     padding: 125px 0px 35px 0px;
   }
+
+  .og-details h3 {
+    font-size: 28px; /* Adjust font size for tablets */
+  }
+
+  .og-details p {
+    font-size: 15px; /* Adjust font size for tablets */
+  }
+
+  .og-details ul li {
+    font-size: 15px; /* Adjust font size for tablets */
+  }
 }
 @media (min-width: 766px) {
   .mobile-menu-fix {
@@ -1499,10 +1511,34 @@ ul.experience-chart {
   .post-container {
     margin-top: 100px;
   }
+
+  .desktop-menu {
+    display: flex; /* Show desktop menu */
+  }
+
+  .mobile-menu {
+    display: none; /* Hide mobile menu */
+  }
+
+  .desktop-menu-logo {
+    display: block; /* Show desktop menu logo */
+  }
 }
 @media (max-width: 600px) {
   .about-me {
     padding: 70px 0px 0px 0px;
+  }
+
+  .og-details h3 {
+    font-size: 24px; /* Adjust font size for mobile */
+  }
+
+  .og-details p {
+    font-size: 14px; /* Adjust font size for mobile */
+  }
+
+  .og-details ul li {
+    font-size: 14px; /* Adjust font size for mobile */
   }
 }
 @media (max-width: 300px) {
@@ -1511,5 +1547,17 @@ ul.experience-chart {
     .fa {
       margin-bottom: 10px;
     }
+  }
+
+  .og-details h3 {
+    font-size: 20px; /* Adjust font size for very small screens */
+  }
+
+  .og-details p {
+    font-size: 12px; /* Adjust font size for very small screens */
+  }
+
+  .og-details ul li {
+    font-size: 12px; /* Adjust font size for very small screens */
   }
 }
