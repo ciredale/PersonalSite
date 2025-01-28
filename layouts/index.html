@@ -35,7 +35,7 @@
           <li>
             <ul id="description-{{ $parsed_name | urlize }}" class="hidden">
               {{ range .description }}
-                <li>{{ . }}</li>
+                <p>{{ . }}</p>
               {{ end }}
             </ul>
             <a

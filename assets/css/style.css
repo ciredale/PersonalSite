@@ -1051,7 +1051,7 @@ ul.experience-chart h4 {
     font-size: 45px;
     margin-bottom: 5px;
   }
-  .animated-text {
+  .static-text {
     font-size: 21px;
     margin-top: 7px;
     margin-bottom: 2px;
@@ -1203,7 +1203,7 @@ ul.experience-chart h4 {
   .introduction {
     font-size: 35px;
   }
-  .animated-text {
+  .static-text {
     font-size: 18px;
   }
   .head-holder .hireMe {
@@ -1217,7 +1217,7 @@ ul.experience-chart h4 {
   .introduction {
     font-size: 35px;
   }
-  .animated-text {
+  .static-text {
     font-size: 18px;
   }
   .head-holder .hireMe {

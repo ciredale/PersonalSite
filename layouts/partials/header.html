@@ -22,15 +22,8 @@
       >
         <div class="head-holder">
           <h1 class="introduction">{{ .title | markdownify | emojify }}</h1>
-          <div class="animated-text">
-            <strong class="cd-headline clip">
-              <span class="cd-words-wrapper">
-                {{ range $index, $elements := .occupations }} 
-                {{ if eq $index 0 }}
-                <b class="is-visible">{{ . }}</b>{{ else }}<b>{{ . }}</b>{{ end }}
-                {{ end }}
-              </span>
-            </strong>
+          <div class="static-text">
+            <strong>{{ index .occupations 0 }}</strong> <!-- Display the first occupation statically -->
           </div>
           {{ if .button.enable }} 
           {{ with .button }}
