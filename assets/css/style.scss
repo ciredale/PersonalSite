@@ -593,8 +593,6 @@ label {
 }
 .menu {
   top: 0;
-  left: 0;
-  right: 0;
   display: block;
   z-index: 999;
 }
@@ -606,13 +604,11 @@ label {
 }
 .menu-container {
   display: flex;
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 55px;
-  align-items: center;
-  justify-content: left;
-  font-weight: bold;
+  align-items: left;
+  justify-content: space-between; /* Ensure space between logo and menu items */
+  padding: 0 90px; /* Add padding to the sides */
+  height: 0px; /* Increase height to position items lower */
+  background: #fff;
   transition: background 1s;
 }
 .menu-normal {
@@ -637,6 +633,8 @@ label {
   display: flex;
   align-items: center;
   margin-right: 20px;
+  white-space: nowrap;
+  overflow: visible;
   a {
     text-decoration: none;
     color: #fff;
@@ -683,7 +681,7 @@ label {
   height: 55px;
   align-items: center;
   justify-content: flex-start;
-  margin-left: 150px;
+  margin-left: 0px;
 }
 .menu-item-transparent.menu-item {
   a {
